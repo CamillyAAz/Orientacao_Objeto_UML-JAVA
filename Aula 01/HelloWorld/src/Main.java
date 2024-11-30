@@ -7,18 +7,12 @@
  */
 public class Main {
 
-    /**
-     * O método main é o ponto de entrada do programa.
-     * É o método que é executado quando o programa é iniciado.
-     * O parâmetro String[] args permite que argumentos sejam passados para o programa a partir da linha de comando,
-     * mas neste exemplo, não estamos utilizando esses argumentos.
-     * @param args
-     */
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        Peixe peixe1 = new Peixe();
+        Animal animal1 = new Animal();
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        peixe1.setPeso(50);
+
+        peixe1.teste();
     }
 }
